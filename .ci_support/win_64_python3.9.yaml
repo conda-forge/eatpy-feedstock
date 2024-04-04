@@ -1,0 +1,26 @@
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+libblas:
+- 3.9 *netlib
+liblapack:
+- 3.9 *netlib
+mpi:
+- msmpi
+mpich:
+- '4'
+netcdf_fortran:
+- '4.6'
+openmpi:
+- '4'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- '3.9'
+target_platform:
+- win-64
