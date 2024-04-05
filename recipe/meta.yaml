@@ -29,6 +29,7 @@ requirements:
     - {{ compiler('fortran') }}  # [not win]
     - m2w64-gcc-fortran     # [win]
     - m2w64-make     # [win]
+    - {{ mpi }} # [mpi == 'openmpi' and build_platform != target_platform]
   host:
     - python {{ python }}
     - cython
