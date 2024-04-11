@@ -6,6 +6,6 @@ python:
     #- 3.12
 
 mpi:
-    - openmpi  # [not win and build_platform == target_platform]
+    - openmpi  # [build_platform == target_platform and not win]
     - mpich    # [not win]
     - msmpi    # [win]
