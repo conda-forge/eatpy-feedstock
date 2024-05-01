@@ -30,6 +30,7 @@ requirements:
     - {{ compiler('fortran') }}              # [not win]
     - m2w64-gcc-fortran                      # [win]
     - m2w64-make                             # [win]
+    - {{ stdlib("c") }}
   host:
     - python {{ python }}
     - cython
