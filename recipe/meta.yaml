@@ -23,7 +23,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
-    - {{ mpi }}                              # [mpi == 'openmpi' and build_platform != target_platform]
+    #- {{ mpi }}                              # [mpi == 'openmpi' and build_platform != target_platform]
     - cmake
     - make                                   # [not win]
     - {{ compiler('c') }}                    # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
