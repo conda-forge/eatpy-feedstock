@@ -32,6 +32,30 @@ jobs:
       osx_64_mpiopenmpipython3.9:
         CONFIG: osx_64_mpiopenmpipython3.9
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.10:
+        CONFIG: osx_arm64_mpimpichpython3.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.11:
+        CONFIG: osx_arm64_mpimpichpython3.11
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.8:
+        CONFIG: osx_arm64_mpimpichpython3.8
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.9:
+        CONFIG: osx_arm64_mpimpichpython3.9
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.10:
+        CONFIG: osx_arm64_mpiopenmpipython3.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.11:
+        CONFIG: osx_arm64_mpiopenmpipython3.11
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.8:
+        CONFIG: osx_arm64_mpiopenmpipython3.8
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.9:
+        CONFIG: osx_arm64_mpiopenmpipython3.9
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
 

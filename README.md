@@ -147,6 +147,62 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64_mpimpichpython3.10</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpython3.10" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpimpichpython3.11</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpython3.11" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpimpichpython3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpython3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpimpichpython3.9</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpython3.9" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpiopenmpipython3.10</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipython3.10" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpiopenmpipython3.11</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipython3.11" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpiopenmpipython3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipython3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_mpiopenmpipython3.9</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eatpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipython3.9" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64_python3.10</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22042&branchName=main">

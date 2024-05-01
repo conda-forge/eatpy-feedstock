@@ -16,16 +16,21 @@ source:
 build:
   entry_points:
     - eat-gotm-gen = eatpy.models.gotm_generate_ensemble:main
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
+    - {{ mpi }}                              # [build_platform != target_platform and mpi == "openmpi"]  As per https://conda-forge.org/docs/maintainer/knowledge_base/#cross-compilation-examples
     - cmake
-    - make                       # [not win]
-    - {{ compiler('c') }}        # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
-    - {{ compiler('fortran') }}  # [not win]
-    - m2w64-gcc-fortran     # [win]
-    - m2w64-make     # [win]
+    - make                                   # [not win]
+    - {{ compiler('c') }}                    # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
+    - {{ compiler('fortran') }}              # [not win]
+    - m2w64-gcc-fortran                      # [win]
+    - m2w64-make                             # [win]
+    - {{ stdlib("c") }}                      # [not win]
   host:
     - python {{ python }}
     - cython
