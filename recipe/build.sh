@@ -10,7 +10,7 @@ fi
 # As per https://conda-forge.org/docs/maintainer/knowledge_base/#cross-compilation-examples
 if [[ "$CONDA_BUILD_CROSS_COMPILATION" == "1" && "${mpi}" == "openmpi" ]]; then
   export OPAL_PREFIX="$PREFIX"
-  export OMPI_FCFLAGS=${FFLAGS}
+  #export OMPI_FCFLAGS=${FFLAGS}
   export CC=mpicc
   export CXX=mpic++
   export FC=mpifort
