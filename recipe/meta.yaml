@@ -28,8 +28,8 @@ requirements:
     - make                                   # [not win]
     - {{ compiler('c') }}                    # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
     - {{ compiler('fortran') }}              # [not win]
-    - m2w64-gcc-fortran                      # [win]
-    - m2w64-make                             # [win]
+    - {{ compiler('m2w64_c') }}              # [win]
+    - {{ compiler('m2w64_fortran') }}        # [win]
     - {{ stdlib("c") }}                      # [not win]
   host:
     - python {{ python }}
