@@ -29,6 +29,7 @@ requirements:
     - {{ compiler('c') }}                    # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
     - {{ compiler('fortran') }}              # [not win]
     - {{ compiler('m2w64_c') }}              # [win]
+    - {{ compiler('m2w64_cxx') }}            # [win] for strptime.cpp included with datetime - Windows only
     - {{ compiler('m2w64_fortran') }}        # [win]
     - {{ stdlib("c") }}                      # [not win]
   host:
@@ -56,9 +57,9 @@ requirements:
     #- libopenblas  # [win]
     #- libblas * *openblas
     - openblas
-    - m2w64-gcc-libs  # [win]
-    - m2w64-gcc-libs-core  # [win]
-    - m2w64-gcc-libgfortran  # [win]
+    #- m2w64-gcc-libs  # [win]
+    #- m2w64-gcc-libs-core  # [win]
+    #- m2w64-gcc-libgfortran  # [win]
 
 test:
   requires:
