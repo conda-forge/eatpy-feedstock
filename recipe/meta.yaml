@@ -25,7 +25,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - {{ mpi }}                              # [build_platform != target_platform and mpi == "openmpi"]  As per https://conda-forge.org/docs/maintainer/knowledge_base/#cross-compilation-examples
     - cmake
-    - ninja
+    - make                                   # [not win]
     - {{ compiler('c') }}                    # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
     - {{ compiler('fortran') }}              # [not win]
     - {{ compiler('m2w64_c') }}              # [win]
