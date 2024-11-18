@@ -19,12 +19,12 @@ mpich:
 netcdf_fortran:
 - '4.6'
 openmpi:
-- '4'
+- '5'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.8'
+- 3.12.* *_cpython
 target_platform:
 - win-64

@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: eatpy
@@ -7,17 +7,17 @@ package:
 source:
   #git_url: https://github.com/BoldingBruggeman/eat.git
   #git_rev: seamless
-  url: https://github.com/BoldingBruggeman/eat/releases/download/v{{ version }}/code-seamless.tar.gz
-  sha256: 5e8c1b08deb35ceefe58dbf89b05a41993ddbd63e2806dce16b118450705af41   # generate with `openssl sha256 <file name>`
+  url: https://github.com/BoldingBruggeman/eat/releases/download/v{{ version }}/code.tar.gz
+  sha256: de8b6e2969cf3bd89a9202bb13f3a042f76058e68ef2dfda9c05d0526a56ff9c   # generate with `openssl sha256 <file name>`
   patches:
   - ersem.patch     # work around gfortran 5.x bug (Windows toolchain)
-  #- ogs.patch       # work around gfortran 5.x limited support for error stop (Windows toolchain)
+  - ogs.patch       # work around gfortran 5.x limited support for error stop (Windows toolchain)
   - datetime.patch  # work around lack of ucrtbase in old MinGW and need to link in c++ stdlib (Windows toolchain)
 
 build:
   entry_points:
     - eat-gotm-gen = eatpy.models.gotm_generate_ensemble:main
-  number: 1
+  number: 0
 
 requirements:
   build:
