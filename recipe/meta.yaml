@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: eatpy
@@ -8,7 +8,7 @@ source:
   #git_url: https://github.com/BoldingBruggeman/eat.git
   #git_rev: seamless
   url: https://github.com/BoldingBruggeman/eat/releases/download/v{{ version }}/code.tar.gz
-  sha256: f864912045b080cfb95ff73130b7da599001766239ba29ca78d7f80c7d86482e   # generate with `openssl sha256 <file name>`
+  sha256: de8b6e2969cf3bd89a9202bb13f3a042f76058e68ef2dfda9c05d0526a56ff9c   # generate with `openssl sha256 <file name>`
   patches:
   - ersem.patch     # work around gfortran 5.x bug (Windows toolchain)
   - ogs.patch       # work around gfortran 5.x limited support for error stop (Windows toolchain)
