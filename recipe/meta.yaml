@@ -17,7 +17,7 @@ source:
 build:
   entry_points:
     - eat-gotm-gen = eatpy.models.gotm_generate_ensemble:main
-  number: 0
+  number: 1
 
 requirements:
   build:
