@@ -5,23 +5,23 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '18'
+- '19'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
 - '10.13'
 channel_sources:
-- conda-forge
+- conda-forge,conda-forge/label/python_rc
 channel_targets:
 - conda-forge main
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '13'
+- '14'
 libblas:
-- 3.9 *netlib
+- 3.9.* *netlib
 liblapack:
-- 3.9 *netlib
+- 3.9.* *netlib
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
@@ -37,9 +37,11 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.14.* *_cp314
 target_platform:
 - osx-64
 zip_keys:
 - - c_compiler_version
   - fortran_compiler_version
+- - python
+  - channel_sources
