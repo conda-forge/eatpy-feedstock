@@ -17,7 +17,7 @@ source:
 build:
   entry_points:
     - eat-gotm-gen = eatpy.models.gotm_generate_ensemble:main
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -27,12 +27,10 @@ requirements:
     - {{ mpi }}                              # [build_platform != target_platform and mpi == "openmpi"]  As per https://conda-forge.org/docs/maintainer/knowledge_base/#cross-compilation-examples
     - cmake
     - make                                   # [not win]
-    - {{ compiler('c') }}                    # [not win] NB on windows this would activate Visual Studio and make that the default C/C++ compiler
-    - {{ compiler('fortran') }}              # [not win]
-    - {{ compiler('m2w64_c') }}              # [win]
-    - {{ compiler('m2w64_cxx') }}            # [win] for strptime.cpp included with datetime - Windows only
-    - {{ compiler('m2w64_fortran') }}        # [win]
-    - {{ stdlib("c") }}                      # [not win] on Windows this pulls in VS and causes cmake to use its cl.exe, which is incompatible with the m2w64 version of windres.exe
+    - {{ stdlib("c") }}
+    - {{ compiler("c") }}
+    - {{ compiler("cxx") }}
+    - {{ compiler("fortran") }}
   host:
     - python {{ python }}
     - cython
@@ -58,7 +56,6 @@ requirements:
     #- libopenblas  # [win]
     #- libblas * *openblas
     - openblas
-    - m2w64-gcc-libgfortran      # [win] NB m2w64-gcc-libs and m2w64-gcc-libs-core are added automatically by m2w64 compiler functions under build
 
 test:
   requires:
